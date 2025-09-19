@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0%;    
+};
+
+.main{
+    width: 100%;
+    margin: 0;
+    background-image: url('basketBall.jpg'); /* заставить это работать пожалуйста */
+    background-size: cover;
+    
+}
+
+.titleCard{
+    position:absolute;
+    left: 900px;
+    top: 20px;   
+}
+
+.boxWithReviews{
+    position: relative;
+    top: 100px;
+text-align: center;
+width: 300px;
+height: 300px;
+background-color: aqua;
+border: 1px sandybrown;
+}
