@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>Оставить заявку</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+<div id="wrapper">
+        <div id="header">
+            <div id="hdrTop">  
+            <ul>
+                <li><a class="hdrButton" id="mainPageButton" href ="index.html">Баскетбольный клуб 'Колобок'</a></li>
+                <li><a class="hdrButton" id="teachers" href="teachers.html">Преподователи</a></li>
+                <li><a class="hdrButton" id="schedule" href="schedule.html">Расписания</a></li>
+                <li><a class="hdrButton" id="requestButton" href="requestButton.html">Оставить запрос на посещение</a></li>
+            </ul>
+            </div>
+        </div>
+        <div id ="signUpButton" class="signUp">
+            <div class="signUp-content">
+                <h1>Записаться на занятие</h1>
+                <form action="https://formsubmit.co/d8832771@gmail.com" method="POST">
+                    <div class="formInsides" id="formName">
+                    <label for="name">Ф.И.О</label>
+                    <input type="text" id="name" name="name" required>
+                    </div>
+                <div action ="mailfrom:https://formsubmit.co/d8832771@email.com"class="formInsides" id="formEmail">
+                    <label for="email">Электронная почта</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="formInsides" id="formPhone">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <div class="formInsides" id="formProgram">
+                    <label for="program">Возраст ребёнка</label>
+                    <select id="program" name="program" required>
+                        <option value="formInsides">Выберите возраст</option>
+                        <option value="preTeen">8-12</option>
+                        <option value="teens">13-16</option>
+                        <option value="teensAdults">17+</option>
+                    </select>
+                    </div>
+                    <button type="submit" class="submitButton">Записаться</button>
+                </form>
+            </div>
+        </div>
+</body>
+</html>

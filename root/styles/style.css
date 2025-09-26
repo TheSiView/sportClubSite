@@ -1,28 +1,137 @@
 *{
-    margin: 0;
-    padding: 0%;    
-};
+padding: 0;
+margin: 0;
+}
 
-.main {
+ul {
+    list-style-type: none;
+    display:flex;
+    justify-content: space-between;
     width: 100%;
-    margin: 0;
-    background-image: url('../images/basketBallCourt.webp');
-    background-size: cover;
-    
+    text-align: center;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 5px;
 }
 
-.titleCard {
-    position:absolute;
-    left: 900px;
-    top: 20px;   
+body {
+background-image: url(/images/basketBallCourtNEW.jpg);
+background-size: cover;
 }
 
-.boxWithReviews {
-    position: relative;
-    top: 100px;
+#shackals{
+    size: 100%;
+    height: 100%;
+    width: 100%;
+}
+
+li {
 text-align: center;
-width: 300px;
-height: 300px;
-background-color: aqua;
-border: 1px sandybrown;
+display: inline-block;
+margin: 0;
+padding: 0;
+flex-grow: 1;
+border-left: 3px solid black;
+}
+
+#hdrTop {
+position: sticky;   
+border: 160px;
+border-color:black;   
+border-radius: 0px;
+border-width: 10px;
+border-style: solid;
+background-color: burlywood;
+padding: 0;
+}
+
+.hdrButton {
+text-decoration: none;
+color: #000;
+display: block;
+font-size: 20px;
+}
+
+.introductionBlock{
+    
+    top: 100px;
+    left: 50px;
+
+}
+
+#intrInsides{
+    text-decoration: none;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 19px;
+    border: 3px solid black;
+background-color: white;
+}
+
+/* Тут у нас преподователи*/
+
+.teachers{
+    position: relative;
+    margin: 130px;
+    border: 3px solid black;
+    background-color: white;
+    text-decoration: none;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#teacherPhoto{
+ width: 200px;
+ height: 200px;
+}
+
+/* начало самой страшной части*/
+
+table {
+    position: relative;
+    top: 100px; 
+    width: 100%;
+    align-items: center;
+    border: 3px solid black;
+    background-color: white;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
+}
+
+td  {
+    border: 3px solid black;
+}
+
+/* разрыв шаблона */
+
+.signUp {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    animation: slideOutTop 0.5s ease-in-out forwards;
+    animation-delay: 2s;
+}
+
+.signUp-content {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 500px;
+    
+    animation: contentSlideOut 0.5s ease-in-out forwards; */
+    animation-delay: 2s; 
+}
+
+@media(max-width:768px){
+    body{
+        font: size 16px;
+    }
+    .container{
+        flex-direction: column;
+    }
 }
